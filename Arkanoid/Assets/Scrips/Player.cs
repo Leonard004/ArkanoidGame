@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    //Comando que que permite manipular los valores desde Unity y le otorgo a bouns un valor
     [SerializeField] private float movSpeed;
     private float bouns = 11f;
 
-    // Update is called once per frame
+    //Le digo al programa que el jugador solo puede moverse en horizontal y le inpido llegar a cierrto punto en x
     void Update()
     {
         Move();
